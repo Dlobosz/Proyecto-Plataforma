@@ -69,6 +69,11 @@ public class Challenge {
         this.unit = unit;
     }
 
+    /** Getter derivado para que el frontend pueda volver a la unidad sin serializar el objeto entero. */
+    public Long getUnitId() {
+        return unit != null ? unit.getId() : null;
+    }
+
     public String getTitulo() {
         return titulo;
     }
