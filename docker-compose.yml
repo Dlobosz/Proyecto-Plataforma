@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: plataforma-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: plataforma
+      MYSQL_DATABASE: plataforma
+    ports:
+      - "3307:3306"
+    volumes:
+      - plataforma_mysql_data:/var/lib/mysql
+
+volumes:
+  plataforma_mysql_data:
