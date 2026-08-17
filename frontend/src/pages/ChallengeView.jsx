@@ -73,7 +73,7 @@ function ChallengeView() {
       const data = await submitChallenge(challengeId, codigo)
       setResultado(data)
     } catch (err) {
-      setErrorEnvio(err.response?.data?.message ?? err.message)
+      setErrorEnvio(err.response?.data?.error ?? err.message)
     } finally {
       setEnviando(false)
     }

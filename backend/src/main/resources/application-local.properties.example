@@ -1,0 +1,7 @@
+# Copiar este archivo a application-local.properties (mismo directorio) y completar
+# con valores reales. application-local.properties esta en .gitignore: nunca se commitea.
+
+spring.datasource.password=CAMBIAR_ESTA_PASSWORD_MATCH_CON_.env
+
+# API key real de tu suscripcion a Judge0 CE en RapidAPI.
+judge0.api.key=TU_RAPIDAPI_KEY_AQUI
