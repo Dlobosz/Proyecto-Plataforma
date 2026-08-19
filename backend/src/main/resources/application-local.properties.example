@@ -3,5 +3,11 @@
 
 spring.datasource.password=CAMBIAR_ESTA_PASSWORD_MATCH_CON_.env
 
-# API key real de tu suscripcion a Judge0 CE en RapidAPI.
-judge0.api.key=TU_RAPIDAPI_KEY_AQUI
+# --- Judge0: opcion A, self-hosted (por defecto, ver judge0/judge0.conf.example) ---
+judge0.api.url=http://localhost:2358
+judge0.api.auth-token=EL_AUTHN_TOKEN_DE_judge0.conf
+
+# --- Judge0: opcion B, Judge0 CE via RapidAPI (comentar la opcion A de arriba) ---
+# judge0.api.url=https://judge0-ce.p.rapidapi.com
+# judge0.api.host=judge0-ce.p.rapidapi.com
+# judge0.api.key=TU_RAPIDAPI_KEY_AQUI

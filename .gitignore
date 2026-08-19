@@ -9,6 +9,7 @@ frontend/.env.local
 # Entorno / secretos
 .env
 *.local
+judge0/judge0.conf
 
 # Editor / OS
 .vscode/
